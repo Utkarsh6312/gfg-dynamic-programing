@@ -1,19 +1,8 @@
-<h1 align="center">Kadane's Algorithm |</h1>
+## 01. Kadane's Algorithm
 
-<p align="center">
-<img src="https://img.shields.io/badge/Platform-GeeksforGeeks-2F8D46?style=for-the-badge" alt="Platform" />
-<img src="https://img.shields.io/badge/Difficulty-MediumAccuracy-757575?style=for-the-badge" alt="Difficulty" />
-<img src="https://img.shields.io/badge/Language-Code-1E88E5?style=for-the-badge" alt="Language" />
-<img src="https://img.shields.io/badge/Accuracy-36.28%25-6A1B9A?style=for-the-badge" alt="Accuracy" />
-<img src="https://img.shields.io/badge/Submissions-1.2MPoints-546E7A?style=for-the-badge" alt="Submissions" />
-<img src="https://img.shields.io/badge/Points-4-FB8C00?style=for-the-badge" alt="Points" />
-</p>
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1?page=1&category=Dynamic%20Programming&status=solved&sortBy=submissions)
 
----
-
-**Problem Link:** [Kadane's Algorithm |](https://www.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1?page=1&category=Dynamic%20Programming&status=solved&sortBy=submissions)
-
-## Problem Description
+### Problem Description
 
 You are given an integer array arr[]. You need to find the maximum sum of a subarray (containing at least one element) in the array arr[].
 Note : A subarray is a continuous part of an array.
@@ -59,18 +48,16 @@ Explanation: The subarray [5, 4, 1, 7, 8] has the largest sum 25.
 Constraints:1 ≤ arr.size() ≤ 10^5-10^4 ≤ arr[i] ≤ 10^4
 ```
 
-## Complexity
+### Time and Auxiliary Space Complexity
 
-| Metric | Value |
-|---|---|
-| Expected Time Complexity | `O(n)Auxiliary Space: O(1)` |
-| Expected Auxiliary Space Complexity | `O(1)` |
+- **Expected Time Complexity:** O(n)
+- **Expected Auxiliary Space Complexity:** O(1)
 
-## Code (Code)
+### Code (C++)
 
-**Language:** `Code`
+**Language:** `C++`
 
-```
+```cpp
 class Solution {
   public:
     int maxSubarraySum(vector<int> &a) {
@@ -87,5 +74,4 @@ class Solution {
 };
 ```
 
----
-*Generated on: 3/6/2026, 3:49:44 PM*
+*Generated on: 3/6/2026, 3:55:11 PM*
