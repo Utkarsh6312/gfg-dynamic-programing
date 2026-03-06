@@ -1,4 +1,4 @@
-## 01. Maximum Product Subarray |
+## 01. Maximum Product Subarray
 
 The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/maximum-product-subarray3604/1?page=1&category=Dynamic%20Programming&status=solved&sortBy=submissions)
 
@@ -10,44 +10,29 @@ Note: It is guaranteed that the answer fits in a 32-bit integer.
 
 ```
 Input: arr[] = [-2, 6, -3, -10, 0, 2]
-```
-
-```
 Output: 180
-```
-
-```
 Explanation: The subarray with maximum product is [6, -3, -10] with product = 6 * (-3) * (-10) = 180.
-```
-
-```
 Input: arr[] = [-1, -3, -10, 0, 6]
-```
-
-```
 Output: 30
-```
-
-```
 Explanation: The subarray with maximum product is [-3, -10] with product = (-3) * (-10) = 30.
-```
-
-```
 Input: arr[] = [2, 3, 4] Output: 24 Explanation: For an array with all positive elements, the result is product of all elements.
 ```
 
-```
-Constraints:1 ≤ arr.size() ≤ 10^6-100 ≤ arr[i] ≤ 100
-```
+#### Constraints
+
+- 1 ≤ arr.size() ≤ 10<sup>6</sup>
+- -100 ≤ arr[i] ≤ 100
 
 ### Time and Auxiliary Space Complexity
 
-- **Expected Time Complexity:** O(n)Auxiliary Space: O(1)
+- **Expected Time Complexity:** O(n)
 - **Expected Auxiliary Space Complexity:** O(1)
 
-### Code (Code)
+### Code (C++)
 
-```
+**Language:** `C++`
+
+```cpp
 class Solution {
   public:
     int maxProduct(vector<int> &a) {
@@ -75,4 +60,4 @@ class Solution {
 };  
 ```
 
-*Generated on: 3/6/2026, 3:29:13 PM*
+*Generated on: 3/6/2026, 4:04:36 PM*
