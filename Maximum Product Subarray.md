@@ -16,6 +16,7 @@ The problem can be found at the following link: [Question Link](https://www.geek
 ```text
 arr[] = [-2, 6, -3, -10, 0, 2]
 ```
+<<<<<<< HEAD
 - **Output:**
 ```text
 180
@@ -39,12 +40,26 @@ arr[] = [-1, -3, -10, 0, 6]
 - **Input:**
 ```text
 arr[] = [2, 3, 4] Output: 24 Explanation: For an array with all positive elements, the result is product of all elements.
+=======
+Input: arr[] = [-2, 6, -3, -10, 0, 2]
+Output: 180
+Explanation: The subarray with maximum product is [6, -3, -10] with product = 6 * (-3) * (-10) = 180.
+Input: arr[] = [-1, -3, -10, 0, 6]
+Output: 30
+Explanation: The subarray with maximum product is [-3, -10] with product = (-3) * (-10) = 30.
+Input: arr[] = [2, 3, 4] Output: 24 Explanation: For an array with all positive elements, the result is product of all elements.
+>>>>>>> 537e47abcc2e8d129880b7cc4c7b1d1527753157
 ```
 
 #### Constraints
 
+<<<<<<< HEAD
 - **1.** `1 ≤ arr.size() ≤ 10⁶-10`
 - **2.** `0 ≤ arr[i] ≤ 100`
+=======
+- 1 ≤ arr.size() ≤ 10<sup>6</sup>
+- -100 ≤ arr[i] ≤ 100
+>>>>>>> 537e47abcc2e8d129880b7cc4c7b1d1527753157
 
 ### Time and Auxiliary Space Complexity
 
@@ -83,4 +98,8 @@ class Solution {
 };  
 ```
 
+<<<<<<< HEAD
 *Generated on: 3/6/2026, 4:46:31 PM*
+=======
+*Generated on: 3/6/2026, 4:04:36 PM*
+>>>>>>> 537e47abcc2e8d129880b7cc4c7b1d1527753157
