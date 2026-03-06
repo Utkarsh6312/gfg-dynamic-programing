@@ -41,9 +41,9 @@ trueExplanation: The entire array can be taken as a subset, giving 1 + 2 + 3 = 6
 
 #### Constraints
 
-- **1.** `1 <= arr.size() <=`
-- **2.** `2001<= arr[i] <=`
-- **3.** `2001<= sum <= 10<sup>4</sup>`
+- **1.** `1 <= arr.size() <= 200`
+- **2.** `1<= arr[i] <= 200`
+- **3.** `1<= sum <= 10<sup>4</sup>`
 
 ### Time and Auxiliary Space Complexity
 
@@ -88,4 +88,4 @@ class Solution {
 };
 ```
 
-*Generated on: 3/6/2026, 4:06:36 PM*
+*Generated on: 3/6/2026, 4:09:31 PM*
