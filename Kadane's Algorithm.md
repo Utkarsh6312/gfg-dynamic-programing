@@ -1,6 +1,6 @@
 ## 01. Kadane's Algorithm
 
-The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1?page=1&category=Dynamic%20Programming&status=solved&sortBy=submissions)
+The problem can be found at the following link: [Question Link](https://www.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1?page=1&category=Dynamic%20Programming&sortBy=submissions)
 
 ### Problem Description
 
@@ -10,7 +10,6 @@ The problem can be found at the following link: [Question Link](https://www.geek
 
 #### Examples
 
-<<<<<<< HEAD
 ##### Example 1
 
 - **Input:**
@@ -49,35 +48,46 @@ arr[] = [5, 4, 1, 7, 8]
 
 #### Constraints
 
-- **1.** `1 ≤ arr.size() ≤ 10⁵`
-- **2.** `-10⁴ ≤ arr[i] ≤ 10⁴`
-=======
-```
-Input: arr[] = [2, 3, -8, 7, -1, 2, 3]
-Output: 11
-Explanation: The subarray [7, -1, 2, 3] has the largest sum 11.
-Input: arr[] = [-2, -4]
-Output: -2
-Explanation: The subarray [-2] has the largest sum -2.
-Input: arr[] = [5, 4, 1, 7, 8]
-Output: 25
-Explanation: The subarray [5, 4, 1, 7, 8] has the largest sum 25.
-```
-
-#### Constraints
-
-- 1 ≤ arr.size() ≤ 10<sup>5</sup>
-- -10<sup>4</sup> ≤ arr[i] ≤ 10<sup>4</sup>
->>>>>>> 537e47abcc2e8d129880b7cc4c7b1d1527753157
+- **1.** `1 ≤ arr.size() ≤ 10⁵-10⁴ ≤ arr[i] ≤ 10⁴`
 
 ### Time and Auxiliary Space Complexity
 
 - **Expected Time Complexity:** O(n)
 - **Expected Auxiliary Space Complexity:** O(1)
 
-### Code (C++)
+### Accepted Solutions (2)
 
-**Language:** `C++`
+#### Solution 1 (C++)
+
+- **Submitted:** 2026-03-12 20:45:30
+- **Status:** Correct
+- **Marks:** 0
+
+```cpp
+class Solution {
+  public:
+    int maxSubarraySum(vector<int> &a) {
+        // Code here
+        int  n=a.size();
+        int s=a[0],m=a[0];
+        // ye har pasition me us no tak ka maximum subarray store karta hai
+        // yaha max wala game chalta hai
+        for(int i=1;i<n;i++){
+            int x=a[i];
+            s=max(a[i],a[i]+s);
+            // max( current array , jo abhi tak sum calculate kar rhe)
+            m=max(m,s);
+        }
+        return m;
+    }
+};
+```
+
+#### Solution 2 (C++)
+
+- **Submitted:** 2025-09-24 15:43:44
+- **Status:** Correct
+- **Marks:** 4
 
 ```cpp
 class Solution {
@@ -96,8 +106,4 @@ class Solution {
 };
 ```
 
-<<<<<<< HEAD
-*Generated on: 3/6/2026, 4:45:37 PM*
-=======
-*Generated on: 3/6/2026, 4:01:39 PM*
->>>>>>> 537e47abcc2e8d129880b7cc4c7b1d1527753157
+*Generated on: 3/12/2026, 8:46:13 PM*
